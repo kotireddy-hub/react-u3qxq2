@@ -1,6 +1,7 @@
 import React from 'react';
 // import LeftContent from './LeftContent';
 // import RightContent from './RightContent';
+import Element from './Element';
 const EmployData = [
   {
     name: 'Koti',
@@ -17,15 +18,16 @@ const EmployData = [
 ];
 function MainContent() {
   return (
-    <div className="mainContent">
+    <div className="mainContent mainData">
       {/* <LeftContent />
       <RightContent /> */}
-      {EmployData.map((Employ) => (
-        <div>
+      {/* {EmployData.map((Employ) => (
+        <div key={Employ.name}>
           <div>{Employ.name}</div>
           <div>{Employ.age}</div>
         </div>
-      ))}
+      ))} */}
+      <Element EmployData={EmployData} />
     </div>
   );
 }
