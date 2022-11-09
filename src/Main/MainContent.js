@@ -27,7 +27,7 @@ function MainContent() {
           <div>{Employ.age}</div>
         </div>
       ))} */}
-      <Element EmployData={EmployData} />
+      <Element Element={EmployData} />
     </div>
   );
 }
